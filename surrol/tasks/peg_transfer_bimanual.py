@@ -64,9 +64,7 @@ class BiPegTransfer(PsmsEnv):
             self.obj_ids['rigid'].append(obj_id)
         self._blocks = np.array(self.obj_ids['rigid'][-num_blocks:])
         np.random.shuffle(self._blocks)
-        #print(self._blocks)
-        self._blocks = [ 7 , 9 , 8, 10,  6 ,11]
-        #self._blocks = [ 7  ,6, 11 , 9  ,8 , 10]
+
         for obj_id in self._blocks[:1]:
             # change color to red
             p.changeVisualShape(obj_id, -1, rgbaColor=(255 / 255, 69 / 255, 58 / 255, 1))
