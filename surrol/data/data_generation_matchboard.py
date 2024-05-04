@@ -10,7 +10,7 @@ import time
 import numpy as np
 import imageio
 from surrol.const import ROOT_DIR_PATH
-from skill_chaining.components.envrionment import MatchBoardSLWrapper
+from viskill.components.envrionment import MatchBoardSLWrapper
 
 parser = argparse.ArgumentParser(description='generate demonstrations for imitation')
 parser.add_argument('--env', type=str, required=True,
